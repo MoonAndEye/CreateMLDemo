@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HouseValuePrediction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-Se-i3I">
+                                <rect key="frame" x="20" y="134" width="335" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2C-St-bUc">
+                                        <rect key="frame" x="0.0" y="0.0" width="110.5" height="50"/>
+                                        <string key="text">每宅房間
+平均數</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收入未達某標準人口佔比" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRZ-6H-M2v">
+                                        <rect key="frame" x="112.5" y="0.0" width="110" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="師生比例" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOx-Uh-dxC">
+                                        <rect key="frame" x="224.5" y="0.0" width="110.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tWU-Z4-Nlg"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="波士頓房價中位數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ou5-hN-ID1">
+                                <rect key="frame" x="118" y="344" width="139" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中位數" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxF-eM-ADi">
+                                <rect key="frame" x="145" y="389.5" width="85.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="波士頓房價中位數預測" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTQ-ww-m8N">
+                                <rect key="frame" x="20" y="40" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mku-t2-7zt">
+                                <rect key="frame" x="20" y="254" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lFJ-hB-cBf"/>
+                                </constraints>
+                                <state key="normal" title="開始計算房價中位數"/>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMn-A8-4IY"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="W1b-HY-Z4f">
+                                <rect key="frame" x="20" y="204" width="335" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cx-dz-iDZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPf-HB-Zdt">
+                                        <rect key="frame" x="117.5" y="0.0" width="100" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hE-tb-x5O">
+                                        <rect key="frame" x="235.5" y="0.0" width="99.5" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="W1b-HY-Z4f" firstAttribute="leading" secondItem="ME5-Se-i3I" secondAttribute="leading" id="0u7-bS-lTT"/>
+                            <constraint firstItem="Ou5-hN-ID1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8LU-eg-j2n"/>
+                            <constraint firstItem="mku-t2-7zt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8YC-vu-EHc"/>
+                            <constraint firstItem="mku-t2-7zt" firstAttribute="top" secondItem="W1b-HY-Z4f" secondAttribute="bottom" constant="20" id="Auy-Yd-QlU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BTQ-ww-m8N" secondAttribute="trailing" constant="20" id="K3S-fX-JRN"/>
+                            <constraint firstItem="AxF-eM-ADi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KTX-kp-wtz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="ME5-Se-i3I" secondAttribute="leading" constant="-20" id="PPa-Vd-17r"/>
+                            <constraint firstItem="W1b-HY-Z4f" firstAttribute="top" secondItem="ME5-Se-i3I" secondAttribute="bottom" constant="20" id="PRS-Dd-CXS"/>
+                            <constraint firstItem="Ou5-hN-ID1" firstAttribute="top" secondItem="mku-t2-7zt" secondAttribute="bottom" constant="40" id="V8O-wm-vGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mku-t2-7zt" secondAttribute="trailing" constant="20" id="Wet-7g-S52"/>
+                            <constraint firstItem="BTQ-ww-m8N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cEs-hD-rA8"/>
+                            <constraint firstItem="AxF-eM-ADi" firstAttribute="top" secondItem="Ou5-hN-ID1" secondAttribute="bottom" constant="25" id="eJf-dV-RSR"/>
+                            <constraint firstItem="BTQ-ww-m8N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jy8-Yk-Icn"/>
+                            <constraint firstItem="ME5-Se-i3I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-20" id="qrI-Qx-f7Z"/>
+                            <constraint firstItem="ME5-Se-i3I" firstAttribute="top" secondItem="BTQ-ww-m8N" secondAttribute="bottom" constant="70" id="vnN-BA-gJJ"/>
+                            <constraint firstItem="W1b-HY-Z4f" firstAttribute="width" secondItem="ME5-Se-i3I" secondAttribute="width" id="y0R-DJ-fVR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dhR-lk-dYC" appends="YES" id="bEb-P1-mtR"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="averageRoomTextField" destination="6cx-dz-iDZ" id="41x-US-Hzd"/>
+                        <outlet property="houseValueLabel" destination="AxF-eM-ADi" id="n9t-jW-fd1"/>
+                        <outlet property="lstatTextField" destination="WPf-HB-Zdt" id="ESg-aN-00f"/>
+                        <outlet property="ptRationTextField" destination="2hE-tb-x5O" id="wxr-YW-5sj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dhR-lk-dYC">
+                    <connections>
+                        <action selector="viewDidTap:" destination="BYZ-38-t0r" id="Vg0-PK-uae"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
