@@ -23,5 +23,5 @@ let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
 
 //4
 let metadata = MLModelMetadata(author: "Marvin Lin", shortDescription: "Using Appcoda's spam json file to train ML model", version: "1.0")
-try spamClassifier.write(to: URL(fileURLWithPath: "/Users/Moon/2swift/self/CreateMLDemo/SpamDetector.mlmodel"), metadata: metadata)
+try spamClassifier.write(to: URL(fileURLWithPath: "/Users/Moon/Documents/SpamDetector.mlmodel"), metadata: metadata)
 
