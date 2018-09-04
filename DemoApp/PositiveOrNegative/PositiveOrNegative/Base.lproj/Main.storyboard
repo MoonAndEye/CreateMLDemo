@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PositiveOrNegative" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Positive or Negative" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7r-0e-Tbc">
+                                <rect key="frame" x="111.5" y="40" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEy-Yw-ql3">
+                                <rect key="frame" x="20" y="91" width="335" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="oCW-WW-uLU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xPu-vr-73z"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMg-i5-BBc">
+                                <rect key="frame" x="20" y="385" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="76S-xd-0GY"/>
+                                </constraints>
+                                <state key="normal" title="Sentiment Analysis"/>
+                                <connections>
+                                    <action selector="judgeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jBd-Sn-nwJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMg-i5-BBc" firstAttribute="top" secondItem="JEy-Yw-ql3" secondAttribute="bottom" constant="44" id="Ekv-bG-uls"/>
+                            <constraint firstItem="JEy-Yw-ql3" firstAttribute="top" secondItem="r7r-0e-Tbc" secondAttribute="bottom" constant="30" id="XWT-1i-2Jg"/>
+                            <constraint firstItem="QMg-i5-BBc" firstAttribute="trailing" secondItem="JEy-Yw-ql3" secondAttribute="trailing" id="fHk-2Z-3wk"/>
+                            <constraint firstItem="QMg-i5-BBc" firstAttribute="leading" secondItem="JEy-Yw-ql3" secondAttribute="leading" id="kR2-T7-kuB"/>
+                            <constraint firstItem="r7r-0e-Tbc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lhl-xl-u1f"/>
+                            <constraint firstItem="r7r-0e-Tbc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sUJ-2U-0Um"/>
+                            <constraint firstItem="JEy-Yw-ql3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wPd-hs-by4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JEy-Yw-ql3" secondAttribute="trailing" constant="20" id="yWH-cJ-I6P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="JEy-Yw-ql3" id="QM3-dq-QjT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
