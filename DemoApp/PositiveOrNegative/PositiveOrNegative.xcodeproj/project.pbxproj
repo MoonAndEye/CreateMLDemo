@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		734CF6DD213EB05B00A6C183 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		73A85933213D75D000E35705 /* PositiveOrNegative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PositiveOrNegative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A85936213D75D000E35705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73A85938213D75D000E35705 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				73DAFECF213D84DA009A40FB /* SentimentClassifer.mlmodel */,
+				734CF6DD213EB05B00A6C183 /* MyPlayground.playground */,
 				73A85936213D75D000E35705 /* AppDelegate.swift */,
 				73A85938213D75D000E35705 /* ViewController.swift */,
 				73A8593A213D75D000E35705 /* Main.storyboard */,
